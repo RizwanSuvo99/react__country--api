@@ -1,0 +1,28 @@
+.countries {
+  padding: 1rem 0;
+}
+.countries > h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.country {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-evenly;
+  gap: 1rem 0;
+}
+
+@media (max-width: 992px) {
+  .country {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 668px) {
+  .countries > h1 {
+    font-size: 2rem;
+  }
+  .country {
+    grid-template-columns: repeat(1, auto);
+  }
+}
